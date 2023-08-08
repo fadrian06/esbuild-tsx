@@ -6,7 +6,7 @@ if (isDevelopment) {
 		const files = JSON.parse(data) as LiveReloadChangeEvent
 		const { added, removed, updated } = files
 
-		if (!(added.length || removed.length) && updated.length === 1) {
+		if (!(added.length || removed.length) && updated.length >= 1) {
 			const links = document.querySelectorAll('link')
 			for (let index = 0; index < links.length; index += 1) {
 				const link = links[index]
