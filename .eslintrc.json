@@ -1,0 +1,84 @@
+{
+	"env": {
+		"browser": true
+	},
+	"extends": [
+		"eslint:all",
+		"plugin:@typescript-eslint/all",
+		"plugin:react/all",
+		"plugin:react/jsx-runtime"
+	],
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 13,
+		"project": "./tsconfig.json"
+	},
+	"rules": {
+		"quotes": [
+			"warn",
+			"single"
+		],
+		"semi": "off",
+		"no-tabs": "off",
+		"indent": [
+			"warn",
+			"tab"
+		],
+		"quote-props": "off",
+		"sort-keys": "off",
+		"no-console": "warn",
+		"one-var": "off",
+		"object-curly-spacing": "off",
+		"sort-imports": "off",
+		"padded-blocks": "off",
+		"space-before-function-paren": "off",
+		"react/jsx-one-expression-per-line": "off",
+		"react/jsx-no-literals": "off",
+		"array-element-newline": "off",
+		"func-style": "off",
+		"no-magic-numbers": "off",
+		"react/jsx-indent": [
+			"warn",
+			"tab"
+		],
+		"react/jsx-max-props-per-line": "off",
+		"react/jsx-max-depth": "off",
+		"max-len": [
+			"warn",
+			90
+		],
+		"jsx-quotes": "off",
+		"react/jsx-no-bind": "off",
+		"no-shadow": "warn",
+		"object-property-newline": "off",
+		"dot-location": "off",
+		"linebreak-style": "off",
+		"@typescript-eslint/object-curly-spacing": "off",
+		"@typescript-eslint/quotes": ["warn", "single"],
+		"@typescript-eslint/semi": "off",
+		"@typescript-eslint/indent": ["warn", "tab"],
+		"react/jsx-filename-extension": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/naming-convention": "off",
+		"@typescript-eslint/space-before-function-paren": "off",
+		"@typescript-eslint/no-magic-numbers": "off",
+		"function-call-argument-newline": "off",
+		"@typescript-eslint/member-delimiter-style": "off",
+		"max-statements": ["warn", 20],
+		"newline-per-chained-call": "off",
+		"@typescript-eslint/prefer-readonly-parameter-types": "off",
+		"@typescript-eslint/prefer-optional-chain": "off",
+		"@typescript-eslint/prefer-for-of": "off"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"ignorePatterns": [
+		"src/**/*.css"
+	],
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint", "react"]
+}
