@@ -69,7 +69,8 @@
 		"newline-per-chained-call": "off",
 		"@typescript-eslint/prefer-readonly-parameter-types": "off",
 		"@typescript-eslint/prefer-optional-chain": "off",
-		"@typescript-eslint/prefer-for-of": "off"
+		"@typescript-eslint/prefer-for-of": "off",
+		"react/prop-types": "off"
 	},
 	"settings": {
 		"react": {

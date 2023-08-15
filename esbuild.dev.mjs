@@ -12,7 +12,8 @@ const context = await esbuild.context({
 	define: {
 		isDevelopment: 'true'
 	},
-	sourcemap: 'external'
+	sourcemap: 'external',
+	target: 'es2018'
 })
 
 await context.watch()
