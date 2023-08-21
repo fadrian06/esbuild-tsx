@@ -1,19 +1,12 @@
 import esbuild from 'esbuild'
+import { commonOptions } from './esbuild.config.mjs'
 
 const context = await esbuild.context({
-	entryPoints: ['src/index.tsx'],
-	format: 'esm',
-	jsx: 'automatic',
-	outfile: 'public/dist/bundle.js',
-	bundle: true,
-	loader: {
-		'.svg': 'dataurl'
-	},
+	...commonOptions,
 	define: {
 		isDevelopment: 'true'
 	},
-	sourcemap: 'external',
-	target: 'es2018'
+	sourcemap: 'external'
 })
 
 await context.watch()

@@ -6,7 +6,7 @@
 		"ignore": ["node_modules"],
 		"indentSize": 2,
 		"indentStyle": "tab",
-		"lineWidth": 80
+		"lineWidth": 90
 	},
 	"javascript": {
 		"formatter": {
@@ -22,16 +22,8 @@
 		"ignore": ["node_modules"],
 		"rules": {
 			"all": true,
-			"nursery": {
-				"all": true
-			},
-			"complexity": {
-				"useOptionalChain": "off"
-			}
+			"nursery": { "all": true }
 		}
 	},
-	"organizeImports": {
-		"enabled": false,
-		"ignore": ["node_modules"]
-	}
+	"organizeImports": { "enabled": false, "ignore": ["node_modules"] }
 }

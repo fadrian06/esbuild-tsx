@@ -1,13 +1,11 @@
 {
 	"compilerOptions": {
-		"target": "es2017",
-		"module": "es2022",
 		"strict": true,
 		"noImplicitAny": true,
 		"strictNullChecks": true,
 		"jsx": "preserve",
-		"moduleResolution": "bundler",
-		"resolveJsonModule": true
+		"resolveJsonModule": true,
+		"lib": ["ES2015", "DOM"]
 	},
-	"include": ["globals.d.ts", "src/**/*", "build.mjs", "dev.mjs"]
+	"include": ["globals.d.ts", "src/**/*", "./esbuild.*"]
 }
