@@ -13,6 +13,6 @@
   "include": [
     "globals.d.ts",
     "src/**/*",
-    "./esbuild.*"
+    "./scripts/*.mjs"
   ]
 }

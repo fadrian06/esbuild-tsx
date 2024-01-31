@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 import esbuild from 'esbuild'
-import { commonOptions } from './esbuild.config.mjs'
+import { commonOptions } from './config.mjs'
 
 const context = await esbuild.context({
   ...commonOptions,
