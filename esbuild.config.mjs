@@ -1,13 +1,13 @@
 /** @type {import('esbuild').BuildOptions} */
 export const commonOptions = {
+  bundle: true,
   entryPoints: ['src/index.tsx'],
   format: 'esm',
   jsx: 'automatic',
-  outfile: 'public/dist/bundle.js',
-  bundle: true,
   loader: {
-    '.svg': 'dataurl',
-    '.module.css': 'local-css'
+    '.module.css': 'local-css',
+    '.svg': 'dataurl'
   },
+  outfile: 'public/dist/bundle.js',
   target: 'es2018'
 }
