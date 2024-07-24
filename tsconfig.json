@@ -12,7 +12,7 @@
   },
   "include": [
     "globals.d.ts",
-    "src/**/*",
-    "./scripts/*.mjs"
+    "src/env.d.ts",
+    "src/**/*"
   ]
 }

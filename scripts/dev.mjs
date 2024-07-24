@@ -2,11 +2,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 import esbuild from 'esbuild'
-import { commonOptions } from './config.mjs'
+import { commonOptions, env } from './config.mjs'
 
 const context = await esbuild.context({
   ...commonOptions,
   define: {
+    ...env,
     isDevelopment: 'true'
   },
   sourcemap: 'external'

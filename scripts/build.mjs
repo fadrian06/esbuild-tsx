@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
 import esbuild from 'esbuild'
-import { commonOptions } from './config.mjs'
+import { commonOptions, env } from './config.mjs'
 
 await esbuild.build({
   ...commonOptions,
   define: {
+    ...env,
     isDevelopment: 'false'
   },
   minify: true
