@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 
 export default function App() {
   const [count, setCount] = useState(0)
+
   const incrementCount = () => {
     setCount(count + 1)
   }
