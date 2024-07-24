@@ -12,8 +12,6 @@ const packageJson = JSON.parse(readFileSync('package.json', 'utf8'))
 packageJson.devDependencies = {
   ...packageJson.devDependencies,
   '@biomejs/biome': '1.7.2',
-  '@types/react': '^18.3.3',
-  '@types/react-dom': '^18.3.0',
   '@typescript-eslint/eslint-plugin': '^7.17.0',
   '@typescript-eslint/parser': '^7.17.0',
   eslint: '^8.57.0',
